@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.javainuse.data.EmployeeRepository;
@@ -63,6 +65,21 @@ public class EmployeeController {
 		Employee emp = new Employee();
 		return new ModelAndView("newEmployee", "form", emp);
 
+	}
+	
+	@RequestMapping(value  = "/employeeDetail/{id}", method = RequestMethod.GET)
+	public ModelAndView empdetails(@PathVariable long id, Model model) {
+		Employee employeeInfo = employeeData.findOne(id);
+		if( employeeData.findOne(id)  == null) {
+			//String message = "The user ID entered does not return an entry in the database";
+			//model.addAttribute("message",message);  
+			System.out.println(id);
+			
+		}
+		//
+		//return new ModelAndView("employeeInfo");
+		return new ModelAndView("employeeInfo", "employees", employeeInfo);
+		
 	}
 
 	@RequestMapping(value = "/listEmployees.html", method = RequestMethod.GET)

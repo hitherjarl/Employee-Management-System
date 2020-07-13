@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="#">Employee Management System</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="${pageContext.request.contextPath}/index.html">Home</a></li>
       <li><a href="${pageContext.request.contextPath}/addNewEmployee.html">Add New Employee</a> </li>
       <li><a href="${pageContext.request.contextPath}/deleteEmployee.html">Remove Employee From Database</a> </li>
       <li><a href="${pageContext.request.contextPath}/listEmployees.html">View All Employees</a> </li>

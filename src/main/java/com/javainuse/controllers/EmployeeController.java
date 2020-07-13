@@ -71,9 +71,11 @@ public class EmployeeController {
 	public ModelAndView empdetails(@PathVariable long id, Model model) {
 		Employee employeeInfo = employeeData.findOne(id);
 		if( employeeData.findOne(id)  == null) {
-			//String message = "The user ID entered does not return an entry in the database";
-			//model.addAttribute("message",message);  
-			System.out.println(id);
+			boolean existEmp = true;
+			String message = "The user ID entered does not return an entry in the database";
+			model.addAttribute("existEmp",existEmp);  
+			model.addAttribute("message",message);  
+			//System.out.println(message);
 			
 		}
 		//

@@ -23,18 +23,17 @@
 </nav>
     <h1>Remove employee in the database</h1>
         
-    <form:form modelAttribute="form">
+    <form:form modelAttribute="form" class="form-row">
         <form:errors path="" element="div" />
-        <div>
+        <div class="form-group col-md-6">
             <form:label path="name">Name</form:label>
-            <form:input path="name" />
+            <form:input path="name" type="email" class="form-control"/>
             <form:errors path="name" />
             <form:label path="id">ID</form:label>
-            <form:input path="id" />
+            <form:input path="id" type="email" class="form-control"/>
             <form:errors path="id" />
-        </div>
-        <div>
-            <input type="submit" />
+        	<br>
+            <input type="submit" class="btn btn-danger"/>
         </div>
     </form:form>
 </body>

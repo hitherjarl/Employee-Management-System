@@ -38,8 +38,6 @@
 </c:if>
 
 
-<a href="${pageContext.request.contextPath}/index.html">Home</a> 
-<br>
-<a href="${pageContext.request.contextPath}/deleteEmployee.html">Delete</a> 
+
 </body>
 </html>

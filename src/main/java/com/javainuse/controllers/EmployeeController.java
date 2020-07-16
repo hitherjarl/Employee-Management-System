@@ -40,31 +40,22 @@ public class EmployeeController {
 	
 	@RequestMapping(value = "/deleteEmployee.html", method = RequestMethod.POST)
 	public String updateEmployee(Employee employee) {
-
 		long value = employee.getId();
-
 		employeeData.delete(value);
-
 		return ("redirect:/listEmployees.html");
 
 	}
 	
 	@RequestMapping(value = "/deleteEmployee.html", method = RequestMethod.GET)
 	public ModelAndView deleteEmployee() {
-
 		Employee emp = new Employee();
-		
-		
 		return new ModelAndView("removeEmployee", "form", emp);
-
 	}
 
 	@RequestMapping(value = "/addNewEmployee.html", method = RequestMethod.GET)
 	public ModelAndView addNewEmployee() {
-
 		Employee emp = new Employee();
 		return new ModelAndView("newEmployee", "form", emp);
-
 	}
 	
 	@RequestMapping(value  = "/employeeDetail/{id}", method = RequestMethod.GET)

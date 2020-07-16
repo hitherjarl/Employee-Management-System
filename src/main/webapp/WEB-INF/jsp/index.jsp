@@ -29,7 +29,7 @@
 </nav>
 <h1>Welcome to the EMS application!</h1>
 
-<h2>Below are the directories:</h2>
+
 
 
 <br>
@@ -38,4 +38,7 @@
 
 
 </body>
+<footer>
+<h6>Created by Imran Siddique</h6>
+</footer>
 </html>

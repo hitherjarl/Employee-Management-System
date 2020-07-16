@@ -36,7 +36,7 @@
             <form:input path="id" type="email" class="form-control" id="exampleInputEmail1"/>
             <form:errors path="id" />
         
-        
+        	<br>
             <input type="submit" class="btn btn-primary"/>
         </div>
     </form:form>

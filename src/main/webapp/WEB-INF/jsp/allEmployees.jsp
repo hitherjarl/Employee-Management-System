@@ -25,17 +25,23 @@
 
 
 <h1>Employees page</h1>
+<table style="width:25%">
+<tr>
+    <th>Name </th>
+    <th>Department </th>
+    <th>ID</th>
+  </tr>
 
-<ul>
 <c:forEach items="${employees}" var="employee">
-   <li>${employee.name}</li>
-   <li>${employee.dept}</li>
-   <li>${employee.id}</li>
+	
+  <tr>
+    <td>${employee.name}</td>
+    <td>${employee.dept}</td>
+    <td>${employee.id}</td>
+  </tr>
 </c:forEach>
-</ul>
+</table>
 
-<a href="${pageContext.request.contextPath}/index.html">Home</a> 
-<br>
-<a href="${pageContext.request.contextPath}/deleteEmployee.html">Delete</a> 
+
 </body>
 </html>

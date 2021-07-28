@@ -1,4 +1,4 @@
-# SpiringBootJSP
+# Employee Managerment System
 
 This is a personal project I created to learn and get familiar with the Spring MVC framework. The project is a simple Employee Management System that allows the user to 
 add an employee, remove an employee, and look up all the employees from the database. This EMS uses RESTful API for HTTP requests such as POST, GET, and DELETE. Java was used for the 
